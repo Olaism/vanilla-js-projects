@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.accordion-tab {
+    background: #eee;
+    margin: 1rem;
+}
+
+.show .accordion-body {
+    display: block;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    background: #ccc;
+    padding: 0.5rem;
+}
+
+.accordion-body {
+    padding: 0.5rem;
+    color: #333;
+    display: none;
+}
+
+.accordion-header h3 {
+    color: #a39b9b;
+}
