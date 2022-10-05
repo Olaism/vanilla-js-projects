@@ -1,0 +1,83 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    background: url('more-leaves.png');
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+form {
+    display: flex;
+    margin-top: 10px;
+}
+
+input#guess {
+    flex: 1 70%;
+    padding: 5px;
+}
+
+button.btn {
+    flex: 1 30%;
+    margin-left:5px;
+    padding: 0 5px;
+}
+
+/* Card */
+
+.card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card Header */
+
+/* Card Body */
+
+.prev-guesses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.prev-guess {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+}
+
+/* Card Footer */
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .result {
+    background: #ccc;
+    padding: 15px 5px;
+    flex: 1 100%;
+    text-align: center;
+}
